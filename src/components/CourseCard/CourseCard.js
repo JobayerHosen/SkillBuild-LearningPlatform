@@ -6,11 +6,11 @@ const CourseCard = ({ course }) => {
   return (
     <Col xs={12} md={6} lg={4} className="mb-5">
       <Card className="p-2 shadow border-0" style={{ width: "100%" }}>
-        <Card.Img variant="top" src={course.cover} />
+        <Card.Img className="rounded" variant="top" src={course.cover} />
         <Card.Body className="ps-1 text-start">
           <div className="d-flex justify-content-between">
             <Alert className="rounded-pill py-1 mt-0 mb-1" variant="success">
-              Design
+              {course.category}
             </Alert>
             <p className="fw-bold">
               {course.enrolled}

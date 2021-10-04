@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Alert, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import CourseCard from "../CourseCard/CourseCard";
 import "./Home.css";
@@ -15,7 +16,9 @@ const Home = () => {
 
   return (
     <div>
-      <Banner></Banner>;{/* FEATURED COURSE SECTION  */}
+      <Banner></Banner>
+
+      {/* FEATURED COURSE SECTION  */}
       <div className="section-title">
         <h3 className="fw-bold">
           Explore Featured <span className="text-success">Courses</span>
@@ -36,9 +39,12 @@ const Home = () => {
       </Container>
       <div className="section-title ">
         <Alert className="w-50" variant="success">
-          Explore More Courses
+          <Link className="text-decoration-none text-success" to="/courses">
+            Explore More Courses
+          </Link>
         </Alert>
       </div>
+
       {/* HOW IT WORKS SECTION  */}
       <div className="section-title">
         <h3 className="fw-bold">
