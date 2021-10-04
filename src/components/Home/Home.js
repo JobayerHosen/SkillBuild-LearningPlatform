@@ -55,6 +55,9 @@ const Home = () => {
       </div>
       <Container>
         <div className="img-text-duo">
+          <div className="img m-4 w-50">
+            <img src="/images/pexels-st.jpg" alt="" />
+          </div>
           <div className="text me-4">
             <ol className="list-unstyled p-0">
               <li className="d-flex align-items-start my-2 my-md-3">
@@ -97,9 +100,6 @@ const Home = () => {
                 </div>
               </li>
             </ol>
-          </div>
-          <div className="img w-50">
-            <img src="/images/lmp-2.png" alt="" />
           </div>
         </div>
       </Container>

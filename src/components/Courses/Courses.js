@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
+import { useParams } from "react-router";
 import CourseCard from "../CourseCard/CourseCard";
 
 const Courses = () => {

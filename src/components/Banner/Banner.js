@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, FormControl, InputGroup } from "react-bootstrap";
+import { useHistory } from "react-router";
 import "./Banner.css";
 
 const Banner = () => {
+  const [search, setSearch] = useState("");
+  const history = useHistory();
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (search) history.push(`/courses/search/${search}`);
+  };
   return (
     <div className="banner">
       <Container className="banner-text d-flex justify-content-center align-items-center">
@@ -14,16 +21,26 @@ const Banner = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
-          <InputGroup className="w-75 " size="lg">
-            <FormControl
-              aria-label="Large"
-              placeholder="Search Courses Here"
-              aria-describedby="inputGroup-sizing-sm"
-            />
-            <InputGroup.Text className="btn-success" id="inputGroup-sizing-lg">
-              Search Course
-            </InputGroup.Text>
-          </InputGroup>
+
+          <form className="search-bar" onSubmit={handleSearch}>
+            <InputGroup className="w-100 " size="lg">
+              <FormControl
+                onChange={(e) => setSearch(e.target.value)}
+                aria-label="Large"
+                required
+                placeholder="Search Courses Here"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+              <InputGroup.Text
+                type="submit"
+                onClick={handleSearch}
+                className="btn-success"
+                id="inputGroup-sizing-lg"
+              >
+                Search
+              </InputGroup.Text>
+            </InputGroup>
+          </form>
         </div>
       </Container>
     </div>
