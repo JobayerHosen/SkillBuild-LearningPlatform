@@ -8,6 +8,7 @@ import "./Home.css";
 const Home = () => {
   const [courses, setCourses] = useState([]);
 
+  // FETCH COURSE LIST FROM LOCAL FILES
   useEffect(() => {
     fetch("./courses.json")
       .then((res) => res.json())
@@ -29,6 +30,7 @@ const Home = () => {
         </p>
       </div>
       <Container>
+        {/* FILTER OUT FIRST 6 COURSE FROM ALL COURSES  */}
         <Row>
           {courses
             .filter((course) => course.id <= 6)

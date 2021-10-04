@@ -6,6 +6,7 @@ import CourseCard from "../CourseCard/CourseCard";
 const Courses = () => {
   const [courses, setCourses] = useState([]);
 
+  // FETCH ALL COURSES FROM LOCAL FILE
   useEffect(() => {
     fetch("./courses.json")
       .then((res) => res.json())
@@ -14,6 +15,7 @@ const Courses = () => {
 
   return (
     <div>
+      {/* SECTION TITLE  */}
       <Container>
         <div className="section-title">
           <h1 className="fw-bold">
@@ -25,6 +27,8 @@ const Courses = () => {
           </p>
         </div>
       </Container>
+
+      {/* COURSES CARDS  */}
       <Container>
         <Row>
           {courses.map((course) => (

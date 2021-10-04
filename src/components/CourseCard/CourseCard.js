@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 
 const CourseCard = ({ course }) => {
   return (
+    // CARD COMPONENT
     <Col xs={12} md={6} lg={4} className="mb-5">
       <Card className="p-2 shadow border-0" style={{ width: "100%" }}>
         <Card.Img className="rounded" variant="top" src={course.cover} />

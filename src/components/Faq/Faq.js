@@ -4,6 +4,7 @@ import { Accordion, Container } from "react-bootstrap";
 const Faq = () => {
   return (
     <div>
+      {/* FAQ ACCORDION COMPONENT  */}
       <Container>
         <div className="section-title">
           <h1 className="fw-bold">
@@ -16,6 +17,7 @@ const Faq = () => {
       </Container>
       <Container className="my-5">
         <Accordion defaultActiveKey="0" flush>
+          {/* Q-1  */}
           <Accordion.Item eventKey="0">
             <Accordion.Header>How do Enroll in the course ?</Accordion.Header>
             <Accordion.Body>
@@ -27,6 +29,7 @@ const Faq = () => {
               mollit anim id est laborum.
             </Accordion.Body>
           </Accordion.Item>
+          {/* Q-2  */}
           <Accordion.Item eventKey="1">
             <Accordion.Header>Do I need to open a Account first ?</Accordion.Header>
             <Accordion.Body>
@@ -38,6 +41,7 @@ const Faq = () => {
               mollit anim id est laborum.
             </Accordion.Body>
           </Accordion.Item>
+          {/* Q-3  */}
           <Accordion.Item eventKey="2">
             <Accordion.Header>How do I get a discount offer ?</Accordion.Header>
             <Accordion.Body>
@@ -49,6 +53,7 @@ const Faq = () => {
               mollit anim id est laborum.
             </Accordion.Body>
           </Accordion.Item>
+          {/* Q-4  */}
           <Accordion.Item eventKey="3">
             <Accordion.Header>Is Lifetile access avaible in every course ?</Accordion.Header>
             <Accordion.Body>
@@ -60,6 +65,7 @@ const Faq = () => {
               mollit anim id est laborum.
             </Accordion.Body>
           </Accordion.Item>
+          {/* Q-5  */}
           <Accordion.Item eventKey="4">
             <Accordion.Header>Do I need to pay extra for certificate ?</Accordion.Header>
             <Accordion.Body>

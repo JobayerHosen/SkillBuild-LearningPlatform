@@ -11,6 +11,7 @@ const Banner = () => {
     if (search) history.push(`/courses/search/${search}`);
   };
   return (
+    //BANNER SECTION
     <div className="banner">
       <Container className="banner-text d-flex justify-content-center align-items-center">
         <div className="d-flex flex-column justify-content-start align-items-center">
@@ -22,6 +23,7 @@ const Banner = () => {
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
 
+          {/* SEARCH FORM  */}
           <form className="search-bar" onSubmit={handleSearch}>
             <InputGroup className="w-100 " size="lg">
               <FormControl

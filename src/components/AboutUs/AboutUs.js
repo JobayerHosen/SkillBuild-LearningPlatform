@@ -4,6 +4,7 @@ import { Alert, Container } from "react-bootstrap";
 const AboutUs = () => {
   return (
     <div>
+      {/* SECTION TITLE  */}
       <Container>
         <div className="section-title">
           <h1 className="fw-bold">
@@ -16,6 +17,7 @@ const AboutUs = () => {
         </div>
       </Container>
 
+      {/* TEXT IMAGE DUO  */}
       <Container>
         <div className="img-text-duo">
           <div className="text me-4">

@@ -6,6 +6,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
+    // REACT-BOOTSTRAP NAVBAR COMPONENT
     <Navbar
       className="shadow-sm"
       sticky="top"
