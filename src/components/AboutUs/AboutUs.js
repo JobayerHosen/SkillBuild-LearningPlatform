@@ -22,7 +22,7 @@ const AboutUs = () => {
         <div className="img-text-duo">
           <div className="text me-4">
             <small className="text-success">About Us</small>
-            <h2 className="fs-2 fw-bold">What We Do & Our Aim</h2>
+            <h2 className="fs-2 fw-bold">We share knowledge with the world</h2>
             <p className="text-muted">
               We help organizations of all types and sizes prepare for the path ahead — wherever it
               leads. Our curated collection of business and technical courses help companies,

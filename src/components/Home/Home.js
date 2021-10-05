@@ -25,18 +25,16 @@ const Home = () => {
           Explore Featured <span className="text-success">Courses</span>
         </h3>
         <p className="text-muted">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          You want to learn or to share what you know, you’ve come to the right place. As a global
+          destination for online learning, we connect people through knowledge.
         </p>
       </div>
       <Container>
         {/* FILTER OUT FIRST 6 COURSE FROM ALL COURSES  */}
         <Row>
-          {courses
-            .filter((course) => course.id <= 6)
-            .map((course) => (
-              <CourseCard course={course}></CourseCard>
-            ))}
+          {courses.slice(0, 6).map((course) => (
+            <CourseCard course={course}></CourseCard>
+          ))}
         </Row>
       </Container>
       <div className="section-title ">

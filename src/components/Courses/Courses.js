@@ -22,8 +22,8 @@ const Courses = () => {
             Find The Most Exciting Online<span className="text-success"> Courses</span>
           </h1>
           <p className="text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore.
+            As a global destination for online learning, we connect people through knowledge.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
         </div>
       </Container>

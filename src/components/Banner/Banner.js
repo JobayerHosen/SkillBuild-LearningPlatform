@@ -16,11 +16,11 @@ const Banner = () => {
       <Container className="banner-text d-flex justify-content-center align-items-center">
         <div className="d-flex flex-column justify-content-start align-items-center">
           <h1 className="fw-bold fs-1">
-            Crack UPSC CSE - GS With World's <br /> Largest Learning Platform
+            Transform Your Life Through Education <br /> With Lergest Learning Platform
           </h1>
           <p className="text-muted w-75 text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            Learners around the world are launching new careers, advancing in their fields, and
+            enriching their lives.
           </p>
 
           {/* SEARCH FORM  */}
