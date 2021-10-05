@@ -6,9 +6,11 @@ import CourseCard from "../CourseCard/CourseCard";
 const Courses = () => {
   const [courses, setCourses] = useState([]);
 
+  const { search } = useParams();
+
   // FETCH ALL COURSES FROM LOCAL FILE
   useEffect(() => {
-    fetch("./courses.json")
+    fetch("/courses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
@@ -31,9 +33,20 @@ const Courses = () => {
       {/* COURSES CARDS  */}
       <Container>
         <Row>
-          {courses.map((course) => (
-            <CourseCard course={course}></CourseCard>
-          ))}
+          {/* IF SEARCH PARAM IS EXIT THEN SHOW SEARCH RESULTS OTHERWISE SHOW ALL */}
+
+          {!search ? (
+            courses.map((course) => <CourseCard key={course.id} course={course}></CourseCard>)
+          ) : (
+            <></>
+          )}
+          {search ? (
+            courses
+              .filter((course) => course?.title.toLowerCase().includes(search.toLowerCase()))
+              .map((course) => <CourseCard key={course.id} course={course}></CourseCard>)
+          ) : (
+            <></>
+          )}
         </Row>
       </Container>
     </div>

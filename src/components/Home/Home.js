@@ -33,7 +33,7 @@ const Home = () => {
         {/* FILTER OUT FIRST 6 COURSE FROM ALL COURSES  */}
         <Row>
           {courses.slice(0, 6).map((course) => (
-            <CourseCard course={course}></CourseCard>
+            <CourseCard key={course.id} course={course}></CourseCard>
           ))}
         </Row>
       </Container>
